@@ -1,0 +1,66 @@
+---
+social:
+  imgsrc: 
+  imgalt: 
+  description: SA Utah (Sexaholics Anonymous Utah)
+	url: https://www.sautah.org
+	sitename: SA Utah
+---
+
+<!doctype html>
+<html class="h-100" lang="en"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+	<head>
+		{# <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149919556-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-149919556-2');
+		</script> #}
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ title }}</title>
+		<meta name="title" content="{{ title }}">
+		{# <meta name="description" content="{{ social.description }}"> #}
+		{# {% include "partials/_opengraph.njk" %} #}
+		<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icon/apple-touch-icon.png' | url }}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icon/favicon-32x32.png' | url }}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icon/favicon-16x16.png' | url }}">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&display=swap" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="{{ '/' | url }}assets/theme.css">
+		<script src="https://kit.fontawesome.com/f4dcf50210.js" crossorigin="anonymous" async></script>
+	</head>
+	<body class="d-flex flex-column h-100 {{ bodyClass if bodyClass else '' }}">
+		{% include "partials/_nav.njk" %}
+		<main role="main" class="flex-shrink-0">
+		{{ content | safe }}
+		</main>
+		<footer class="mt-auto py-5 bg-light">
+			<div class="container text-center">
+				<p class="text-muted">
+				&copy;
+				<script>document.write(new Date().getFullYear());</script>
+				SA / SAnon Utah Retreat Committees. All right reserved
+				</p>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+		{# <script>
+			window.onscroll = function() {scrollFunction()};
+			const headerLogo = document.getElementById("header-logo");
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+					if (headerLogo.style.height !== "50px") headerLogo.style.height = "50px";
+				} else {
+					if (headerLogo.style.height !== "100px") headerLogo.style.height = "100px";
+				}
+			}
+		</script> #}
+	</body>
+</html>
+		{# <style>{{ css | cssmin | safe }}</style> #}
