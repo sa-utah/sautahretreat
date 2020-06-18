@@ -20,9 +20,15 @@ h1, h2, h3 {
 .hero {
   background-image: url('/assets/default.jpg');
   min-height: 300px;
-  height: 50vh;
+  height: 35vh;
   margin-top: 50px;
-  margin-bottom: -3rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .hero {
+    margin-bottom: -3rem;
+  }
 }
 
 .parallax {
