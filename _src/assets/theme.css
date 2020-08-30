@@ -94,3 +94,7 @@ h1, h2, h3 {
 .meetings-notes {
   width: 40%;
 }
+
+th {
+  width: 9rem;
+}
