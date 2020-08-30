@@ -1,0 +1,54 @@
+---
+layout: base
+bodyClass: home
+---
+{% set home_news = collections.news | reverse %}
+{% set news_feature_size = 3 %}
+
+<div class="hero jumbotron parallax text-white text-center">
+  <div class="container d-flex h-100 flex-column justify-content-center align-items-center">
+    <h1 class="text-uppercase h3 font-weight-bold">{{ event.title }}</h1>
+    <h2 class="text-uppercase display-4 font-weight-normal">{{ event.theme }}</h2>
+    <h2 class="h3 font-weight-normal">{{ event.date }}</h2>
+    <p class="my-3">
+      <a href="https://www.eventbrite.com/e/sa-s-anon-utah-retreat-2020-tickets-109969684286" class="btn btn-primary">{{ hero.cta_button_text }}</a>
+    </p>
+  </div>
+</div>
+<div class="container bg-white shadow-sm p-5">
+  <h3 class="text-center">News</h3>
+  <div class="row">
+    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Test</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum modi id ut debitis. Minus non inventore voluptas error, praesentium ipsa repellendus, eaque eveniet alias optio sit eos iure sint dolorem?</p>
+          <a href="#" class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Test</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum modi id ut debitis. Minus non inventore voluptas error, praesentium ipsa repellendus, eaque eveniet alias optio sit eos iure sint dolorem?</p>
+          <a href="#" class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Test</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum modi id ut debitis. Minus non inventore voluptas error, praesentium ipsa repellendus, eaque eveniet alias optio sit eos iure sint dolorem?</p>
+          <a href="#" class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      {{ content | safe }}
+    </div>
+  </div>
+</div>
