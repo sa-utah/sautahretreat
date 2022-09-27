@@ -1,4 +1,32 @@
 ---
 label: schedule
 hide_body: true
-fields: []
+fields:
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: dddd, MMMM d
+- name: room
+  type: field_group_list
+  fields:
+  - name: room_label
+    type: text
+    config:
+      required: false
+    label: Room Label
+  - name: room_number
+    type: text
+    config:
+      required: false
+    label: Room Number
+  config:
+    min: 
+    max: 
+    labelField: room_label
+  label: Room
