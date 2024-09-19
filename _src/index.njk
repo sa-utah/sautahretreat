@@ -5,9 +5,8 @@ bodyClass: home
 {% set home_news = collections.news | reverse %}
 {% set news_feature_size = 3 %}
 
-
-<div class="container-fluid py-4 mt-5 mx-3 mx-md-5 text-center">
-  {# <h2 class="mb-4">Save the date!</h2>
+{# <div class="container-fluid py-4 mt-5 mx-3 mx-md-5 text-center">
+  <h2 class="mb-4">Save the date!</h2>
   <img class="my-4" style="height:180px;" src="/assets/logo-2024.png">
   <h3 class="mb-4">2024 34th SA/S-Anon<br>
   Southwest Regional Unity Conference<br>
@@ -21,7 +20,7 @@ bodyClass: home
     Couples Meetings to help with acceptance and healing<br>
     Panels to foster understanding and grace<br>
     Signup info coming soon
-  </p> #}
+  </p>
   <div class="row justify-content-center">
     <div class="col-12 col-md-6">
       <p class="my-3">
@@ -30,9 +29,9 @@ bodyClass: home
       <img class="img-fluid" src="{{ '/assets/Flyer103.jpg' | url }}">
     </div>
   </div>
-</div>
+</div> #}
 
-<div class="container-fluid bg-white shadow-sm">
+<div class="container bg-white mt-5">
   <div class="row">
     <div class="col">
       {# <section id="speakers" class="mt-5 mx-3 mx-md-5">
@@ -42,24 +41,41 @@ bodyClass: home
         <h4>TBA</h4>
       </section> #}
       <section id="about" class="mt-5 mx-3 mx-md-5">
-        <h3 class="mb-4">About The Event</h3>
-        <ul>
-          <li>SA and S-Anon Keynote Speakers to bring stories of hope</li>
-          <li>Topics and Breakouts specific to each fellowship</li>
-          <li>Couples Meetings to help with acceptance and healing</li>
-          <li>Panels to foster understanding and grace</li>
-          </ul>
+        <h3 class="mb-4">Dates</h3>
+        <h4>October 11th-13th, 2024</h4>
       </section>
+    </div>
+  </div>
+      
       <section id="location" class="mt-5 mx-3 mx-md-5">
+        <div class="row">
+      <div class="col">
         <h3 class="mb-4">Location</h3>
+        
         <h4>Sheraton Salt Lake City Hotel</h4>
         <p>150 W 500 S, Salt Lake City, UT 84101</p>
         <p>Directions: <a href="https://maps.google.com/?daddr=150%20W%20500%20S%2C%20Salt%20Lake%20City%20UT%2084101%20US" target="_none">Google</a>, <a href="https://www.bing.com/maps/default.aspx?rtp=~adr.150%20W%20500%20S%2C%20Salt%20Lake%20City%20UT%2084101%20US" target="_none">Bing</a>, <a href="http://mapq.st/directions?saddr=&daddr=150%20W%20500%20S%2C%20Salt%20Lake%20City%20UT%2084101%20US" target="_none">MapQuest</a></p>
-        
+        </div>
+        <div class="col">
+<img class="img-fluid" src="{{ '/assets/sheraton.jpg' | url }}">
+          </div>
+        </div>
       </section>
+      <section id="about" class="mt-5 mx-3 mx-md-5">
+        <h3 class="mb-4">About The Event</h3>
+        <ul>
+          <li>Instead of our usual Utah Fall Retreat, we’re combining with the Southwest Region Unity Conference. Fellowship with others from Utah, California, Nevada, Arizona, and Hawaii!</li>
+          <li>From out of town, or want to stay in comfort at the Four-Star Sheraton Salt Lake City Hotel?  Book lodging directly with special rates at the <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1721689018002&key=GRP&app=resvlink" target="_blank">Sheraton Salt Lake City Hotel</a></li>
+          <li>Catered meals include Friday Dinner, Saturday Breakfast/Lunch/Dinner, and Sunday Breakfast.</li>
+          <li>SA and S-Anon Keynote speakers to bring stories of hope during each dinner and lunch.</li>
+          <li>This year the conference runs through Sunday morning, giving you more opportunities to connect. Join us all 3 days, or just a single day.</li>
+          </ul>
+      </section>
+      
       <section id="schedule" class="mt-5 mx-3 mx-md-5">
         <h3 class="my-4">Schedule</h3>
-        <div class="table-responsive">
+        <a class="m-2 p-2 nav-item text-white nav-link btn btn-primary btn-lg" style="background-color: #FF4433; border-color: #FF4433;" href={{ '/assets/Unity-Conference-Schedule-2024.pdf' | url }} >Full Conference Schedule</a>
+        {# <div class="table-responsive">
           <table class="table my-3">
             <tr>
               <td>4:00PM - 5:45PM</td>
@@ -104,7 +120,7 @@ bodyClass: home
               <td></td>
             </tr>
           </table>
-        </div>
+        </div> #}
         </section>
       {# <section id="schedule" class="mt-5 mx-3 mx-md-5">
         <h3 class="my-4">Schedule</h3>
@@ -273,7 +289,11 @@ bodyClass: home
       </section> #}
       <section id="volunteer" class="mt-5 mx-3 mx-md-5 mb-5">
         <h3>Volunteer</h3>
-        <p>If you're interested in speaking or filling other service opportunities to help with the retreat, please email us at <strong>sasanonunityretreat2024@gmail.com</strong></p>
+        <p>If you're interested in speaking during a breakout session or filling other service opportunities, please indicate on the registration page or email us at <strong>sasanonunityretreat2024@gmail.com</strong></p>
+      </section>
+      <section id="share" class="mt-5 mx-3 mx-md-5 mb-5">
+        <h3>Share</h3>
+        <p>Share this printable flyer and take it to the groups you attend.</p>
       </section>
     </div>
   </div>
