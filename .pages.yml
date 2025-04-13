@@ -1,0 +1,8 @@
+media:
+  input: _src/assets
+  output: /assets
+content:
+  - name: retreat-info
+    label: Retreat Info
+    type: file
+    path: _src/index.njk
