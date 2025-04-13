@@ -2,7 +2,7 @@ media:
   input: _src/assets
   output: /assets
 content:
-  - name: retreat-info
-    label: Retreat Info
+  - name: homepage
+    label: Home Page
     type: file
     path: _src/index.njk
