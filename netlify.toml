@@ -1,3 +1,9 @@
 [build]
 publish = "_site"
 command = "eleventy"
+
+[[redirects]]
+from = "https://www.sautahretreats.org/*"
+to = "https://www.sautah.org/"
+status = 301
+force = true
